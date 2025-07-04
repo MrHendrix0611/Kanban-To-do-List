@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Tarfeas</h1>
+        <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+        <button onclick="addTask()">Adicionar</button>
+
+        <div class="kanban-board">
+            <div class="kanban-column" id="to-do">
+                <h2>Tarefas</h2>
+                <div class="kanban-items" id="todo-items">
+                    
+                </div>
+            </div>
+            <div class="kanban-column" id="in-progress">
+                <h2>Em Progresso</h2>
+                <div class="kanban-items" id="inprogress-items">
+
+                </div>
+            </div>
+            <div class="kanban-column" id="done">
+                <h2>Concluídas</h2>
+                <div class="kanban-items" id="done-items">
+
+                </div>
+            </div>
+        </div>
+        <div class="kanban-column trash-column">
+            <div class="kanban-items trash-bin" id="trash-items">🗑️</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
