@@ -1,4 +1,4 @@
-# To-do-list + Quadro Kanban
+# Todolist + Quadro Kanban
 Um gerenciador de tarefas moderno com mecânicas de arrastar e soltar
 
 ## 📝 Descrição
